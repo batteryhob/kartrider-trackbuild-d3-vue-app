@@ -304,7 +304,7 @@ export default {
     },
     methods: {
         closeModal(){
-            this.$parent.$data.modalBuild = false
+            this.$parent.$data.flag = false
         }
     },
     data() {
@@ -318,6 +318,10 @@ export default {
 </script>
 
 <style>
+ul{
+    width: 95px;
+}
+
 .d3area {
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc

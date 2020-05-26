@@ -1,6 +1,7 @@
 <template>
   <div id="wrap">
-    <TrackBuild></TrackBuild>
+      <button @click="showTrackbuild">빌드보기</button>
+    <TrackBuild v-if="flag"></TrackBuild>
   </div>
 </template>
 
@@ -11,11 +12,27 @@ export default {
   name: 'App',
   components: {
     TrackBuild
+  },
+  methods: {
+    showTrackbuild: function(){
+        this.$data.flag = !this.$data.flag
+    }  
+  },
+  data(){
+      return {
+          flag: false
+      }
   }
 }
 </script>
 
 <style>
+body, html {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
 #wrap #buildview {
     position: fixed;
     z-index: 9998;

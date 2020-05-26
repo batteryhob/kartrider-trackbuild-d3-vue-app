@@ -1,29 +1,12 @@
-# kartrider-trackbuild-d3-vue-app
+## This app is
+카트라이더 TMI에서 쓰인 트랙빌드 샘플코드 입니다.
 
-## Project setup
+## How to check
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
+    yarn add
+    yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## This gits of it is
+- length가 긴 Nosql 데이터의 파싱
+- d3 차트 샘플
